@@ -1,1 +1,35 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
+/* Animated lesbian flag */
+body {
+    background: linear-gradient(
+        180deg,
+        #D52D00 0%,
+        #EF7627 14.28%,
+        #FF9A56 28.56%,
+        #FFFFFF 42.84%,
+        #D162A4 57.12%,
+        #B55690 71.40%,
+        #A30262 100%
+    );
+
+    background-size: 200% 200%;
+    animation: prideWave 12s ease-in-out infinite;
+}
+
+@keyframes prideWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
